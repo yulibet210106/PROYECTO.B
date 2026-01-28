@@ -1,23 +1,16 @@
-const num1 = document.getElementById("num1");
-const num2 = document.getElementById("num2");
-const result = document.getElementById("result");
+function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+}
 
-document.getElementById("sum").addEventListener("click", () => {
-  result.textContent = Number(num1.value) + Number(num2.value);
-});
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
 
-document.getElementById("sub").addEventListener("click", () => {
-  result.textContent = Number(num1.value) - Number(num2.value);
-});
-
-document.getElementById("mul").addEventListener("click", () => {
-  result.textContent = Number(num1.value) * Number(num2.value);
-});
-
-document.getElementById("div").addEventListener("click", () => {
-  if (Number(num2.value) === 0) {
-    alert("No se puede dividir entre cero");
-  } else {
-    result.textContent = Number(num1.value) / Number(num2.value);
-  }
-});
+function calculateResult() {
+    try {
+        const result = eval(document.getElementById('display').value);
+        document.getElementById('display').value = result;
+    } catch (error) {
+        document.getElementById('display').value = 'Error';
+    }
+}
