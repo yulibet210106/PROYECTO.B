@@ -1,70 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sea Beauty & Nails</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Sea Beauty Center | Manicure & Pedicure</title>
+  <meta name="description" content="Centro de belleza especializado en manicure y pedicure. Atención personalizada y profesional." />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1>Centro de Belleza</h1>
-    </header>
 
-    <section class="catalog">
-        <h2>Catálogo de Servicios</h2>
-        <div class="service-card">
-            <img src="https://static.wixstatic.com/media/f07fa3_61b180e2e16f4ee490c34c8de17563c2~mv2.jpg/v1/fill/w_280,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f07fa3_61b180e2e16f4ee490c34c8de17563c2~mv2.jpg" alt="Uñas Sot Gel">
-            <h3>Uñas Sot Gel</h3>
-            <p>Precio: $18.000</p>
-        </div>
-        <div class="service-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvdIXni4HozCvcZOSpd90VHTxtx4wWhzItCQ&s" alt="Uñas Polygel">
-            <h3>Uñas Polygel</h3>
-            <p>Precio: $20.000</p>
-        </div>
-        <div class="service-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzsRNexB8LM2H9FwIm-fZ7eXU1pfUQk0b99w&s" alt="Uñas capping">
-            <h3>Capping</h3>
-            <p>Precio: $16.000</p>
-        </div>
-        <div class="service-card">
-            <img src="https://images.ecestaticos.com/kHbGPYO_nB87Jhndk57svNVTW7w=/0x0:1600x900/1200x1200/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb95%2Fceb%2F96b%2Fb95ceb96b73abee381e533d2bff3547e.jpg" alt="Uñas Dipping">
-            <h3>Dipping</h3>
-            <p>Precio: $16.000</p>
-        </div>
-        <div class="service-card">
-            <img src="https://st2.depositphotos.com/3250997/11059/i/450/depositphotos_110590532-stock-photo-beautiful-classic-red-pedicure-on.jpg" alt="Pedicuría">
-            <h3>Pedicuría</h3>
-            <p>Precio: $20.000</p>
-        </div>
-    </section>
+  <!-- HEADER / HERO -->
+  <header class="hero">
+    <h1>Sea Beauty Center</h1>
+    <p>Realzamos tu belleza con manos expertas</p>
+    <a href="#contacto" class="btn">Agendar turno</a>
+  </header>h
 
-    <section class="contact">
-        <h2>Contacto</h2>
-        <p><WhatsApp:3138833186</p>
-        <p>Ubicación: Bogota, Colombia</p>
-    </section>
+  <!-- SOBRE NOSOTROS -->
+  <section class="about" id="about">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      Somos un centro de estética y belleza especializado en manicure y pedicure.
+      Brindamos una atención personalizada, profesional y enfocada en el cuidado
+      y bienestar de cada cliente.
+    </p>
+  </section>
 
-    <section class="appointment">
-        <h2>Agendar Turno</h2>
-        <form id="appointment-form">
-            <input type="text" placeholder="Tu nombre" required>
-            <select required>
-                <option value="" disabled selected>Selecciona un servicio</option>
-                <option value="Hot Gel">Uñas Sot Gel</option>
-                <option value="Polygel">Uñas Polygel</option>
-                <option value="Capping">Capping</option>
-                <option value="Dipping">Dipping</option>
-                <option value="Pedicuría">Pedicuría</option>
-            </select>
-            <input type="date" required>
-            <input type="time" required>
-            <button type="submit">Reservar Turno</button>
-        </form>
-        <p>O <a href="https://wa.me/3138833186" target="_blank">reserva por WhatsApp</a></p>
-    </section>
+  <!-- SERVICIOS -->
+  <section class="services" id="services">
+    <h2>Servicios</h2>
 
-    <script src="script.js"></script>
+    <div class="services-grid">
+      <article class="card">
+        <img src="https://static.wixstatic.com/media/f07fa3_61b180e2e16f4ee490c34c8de17563c2~mv2.jpg/v1/fill/w_280,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f07fa3_61b180e2e16f4ee490c34c8de17563c2~mv2.jpg" alt="Soft Gel">
+        <h3>Soft Gel</h3>
+        <p>$18.000</p>
+      </article>
+
+      <article class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvdIXni4HozCvcZOSpd90VHTxtx4wWhzItCQ&s" alt="Polygel">
+        <h3>Polygel</h3>
+        <p>$20.000</p>
+      </article>
+
+      <article class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzsRNexB8LM2H9FwIm-fZ7eXU1pfUQk0b99w&s" alt="Capping">
+        <h3>Capping</h3>
+        <p>$18.000</p>
+      </article>
+
+      <article class="card">
+        <img src="https://images.ecestaticos.com/kHbGPYO_nB87Jhndk57svNVTW7w=/0x0:1600x900/1200x1200/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb95%2Fceb%2F96b%2Fb95ceb96b73abee381e533d2bff3547e.jpg" alt="Dipping">
+        <h3>Dipping</h3>
+        <p>$16.000</p>
+      </article>
+
+      <article class="card">
+        <img src="https://st2.depositphotos.com/3250997/11059/i/450/depositphotos_110590532-stock-photo-beautiful-classic-red-pedicure-on.jpg" alt="Pedicuría">
+        <h3>Pedicuría</h3>
+        <p>$22.000</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Ubicación: Salta, Argentina</p>
+    <p>📱 WhatsApp: +54 93873 6575 80</p>
+
+    <a 
+      href="https://wa.me/3873657580" 
+      target="_blank" 
+      class="btn">
+      Agendar por WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="socials">
+      <a href="#">WhatsApp</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+    <p>© 2026 Sea Beauty Center</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

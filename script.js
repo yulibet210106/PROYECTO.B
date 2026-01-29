@@ -1,5 +1,9 @@
-document.getElementById('appointment-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const message = "¡Gracias por reservar!";
-    alert(message); // Alerta para el usuario al reservar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
