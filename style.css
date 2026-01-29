@@ -1,66 +1,61 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    margin: 0;
+    padding: 0;
 }
 
-.calculator {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #F4B6C2;
     padding: 20px;
-    width: 100%;
-    max-width: 400px; /* Tamaño máximo */
-    transition: background-color 0.3s;
+    text-align: center;
 }
 
-#display {
+.catalog {
+    padding: 20px;
+}
+
+.service-card {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: calc(30% - 30px);
+}
+
+.service-card img {
     width: 100%;
-    height: 50px;
-    font-size: 28px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: right;
+    border-radius: 10px;
+}
+
+.contact, .appointment {
+    padding: 20px;
+}
+
+input, select {
+    margin: 5px;
     padding: 10px;
-    margin-bottom: 15px;
-    background-color: #f9f9f9;
-    color: #333;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    width: 100%;
 }
 
 button {
-    height: 60px;
-    font-size: 20px;
+    background-color: #F4B6C2;
+    color: white;
+    padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #333; /* Fondo oscuro para los botones */
-    color: white; /* Texto blanco */
     cursor: pointer;
-    transition: background-color 0.2s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 button:hover {
-    background-color: #444; /* Color más claro al pasar el ratón */
+    background-color: #F2A6B6;
 }
 
-@media (max-width: 600px) {
-    #display {
-        font-size: 24px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-    }
-    button {
-        font-size: 18px; /* Tamaño de fuente de botón más pequeño en pantallas pequeñas */
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(100% - 30px);
     }
 }
